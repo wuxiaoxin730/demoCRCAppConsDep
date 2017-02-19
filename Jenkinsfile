@@ -18,5 +18,11 @@ echo "path3 = %Path%"
         '''
       }
     }
+    
+    stage ('Build') {
+      steps {
+        bat 'mvn clean install'
+      }
+    }
   }
 }
